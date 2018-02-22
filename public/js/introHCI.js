@@ -9,5 +9,12 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// your code here
+	ga('send', 'pageview');
+}
+
+function track() {
+	e.preventDefault();
+	ga('create', 'UA-XXXX-Y', 'auto');
+	ga('send', 'event', 'like', 'click');
+	console.log('called2');
 }
